@@ -9,8 +9,6 @@ always @(posedge clk)
 	if (en==0) 	 	col <= '0;
 	else if (en==1) col <= 2**col_sel;
 
-initial begin
-	col = '0;
-end
+initial col = '0;
 
 endmodule

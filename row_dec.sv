@@ -12,8 +12,6 @@ always @(posedge clk)
 
 assign row1 = (en) ? ~row0 : '0;
 
-initial begin
-	for (int i=0; i<PAIR_ROW_NO; i++) row0 = 0;
-end
+initial for (int i=0; i<PAIR_ROW_NO; i++) row0 = 0;
 
 endmodule
